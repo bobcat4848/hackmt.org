@@ -1,0 +1,29 @@
+ul {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  li {
+    margin: auto;
+    outline: none;
+    //animation-name: linkHover;
+    //animation-duration: 2s;
+
+    a {
+      color: white;
+      text-shadow: none;
+      background-image: none;
+      display:inline-block;
+      &::after {
+        display:block;
+        content: '';
+        border-bottom: 2px solid #0099ff;
+        transform: scaleX(0);  
+        transition: transform 150ms ease-in-out;
+      }
+      &:hover::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+}

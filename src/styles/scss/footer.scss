@@ -1,0 +1,35 @@
+
+.footer {
+  background-color: #0F2027;
+  height: 5rem;
+
+  hr {
+    background-color: white;
+    color: white;
+    height: 5px;
+  }
+
+  h6 {
+    width: 80%;
+    color: white;
+    margin: auto;
+    text-align: right;
+  }
+
+  a {
+    color: white;
+    text-shadow: none;
+    background-image: none;
+    display:inline-block;
+    &::after {
+      display: block;
+      content: '';
+      border-bottom: 2px solid #0099ff;
+      transform: scaleX(0);  
+      transition: transform 150ms ease-in-out;
+    }
+    &:hover::after {
+      transform: scaleX(1);
+    }
+  }
+}
