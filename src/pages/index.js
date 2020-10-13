@@ -3,6 +3,8 @@ import Footer from "../components/footer";
 import Layout from "../components/layout"
 import MidLayout from "../components/midlayout"
 import Speakers from "../components/speakers";
+import Sponsors from "../components/sponsors";
+import RegisterButton from "../components/register";
 import "../styles/scss/default.scss"
 
 export default function Home() {
@@ -11,9 +13,9 @@ export default function Home() {
       <Layout>
         <h1 style={{color: 'white'}}>Welcome to HackMT's Website</h1>
         
-        <p>
-          Join us Janurary 22nd-24th and create awesome projects with industry professionals from companies such as x, y, and z.
-        </p>
+        <p>Join us Janurary 22nd-24th and create awesome projects with industry professionals.</p>
+
+        <RegisterButton/>
       </Layout>
 
       <div>
@@ -24,58 +26,27 @@ export default function Home() {
         <MidLayout>
           <h1 id="speakers">Speakers</h1>
           <p>Meet some of the industry professionals you will hear from</p>
+          <div id="roundMe" style={{marginBottom: '50px'}}>
+            <table>
+              <caption>The speaker list is currently under works, keep checking back to see new updates.</caption>
+            </table>
+          </div>
 
-          <Speakers></Speakers>
-
+          <h1 id="sponsors">Sponsors</h1>
+          <p>Take a look at the companies that made this event possible</p>
+          <Sponsors/>
 
           <h1 id="schedule">Schedule</h1>
 
           <div id="roundMe">
             <table>
-            <caption>Friday</caption>
-              <tr>
-                <th>Name</th>
-                <th>Speaker(s)</th>
-                <th>Time</th>
-              </tr>
-              <tr>
-                <td>Event Kickoff Ceremony</td>
-                <td>Jacob Cuomo</td>
-                <td>12:00 PM</td>
-              </tr>
-              <tr>
-                <td>The Industry</td>
-                <td>Oliver Gladwell</td>
-                <td>1:30 PM</td>
-              </tr>
-              <tr>
-                <td>Intro to Using Git</td>
-                <td>Jacob Cuomo</td>
-                <td>4:00 PM</td>
-              </tr>
-              <tr>
-                <td>Some Event</td>
-                <td>Jackson</td>
-                <td>5:00 PM</td>
-              </tr>
-              <tr>
-                <td>Some Event 2</td>
-                <td>Henry</td>
-                <td>5:00 PM</td>
-              </tr>
-              <tr>
-                <td>Some Event 3</td>
-                <td>Jackson</td>
-                <td>5:00 PM</td>
-              </tr>
-              <tr>
-                <td>Some Event 4</td>
-                <td>Jackson</td>
-                <td>5:00 PM</td>
-              </tr>
+              <caption>The schedule is currently under works, keep checking back to see new updates.</caption>
             </table>
           </div>
           
+          <h5>If you have not already registered, please do so at the link below</h5>
+          <RegisterButton/>
+
         </MidLayout>
       </div>
 

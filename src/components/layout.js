@@ -16,8 +16,8 @@ export default function Layout({ children }) {
           <img alt="" style={{ display: `inline` }}src="https://i.imgur.com/8XXjiOB.png"></img>
         <ul style={{ listStyle: `none`, float: `center` }}>
           <ListLink to="#speakers">Speakers</ListLink>
-          <ListLink to="#schedule">Schedule</ListLink>
           <ListLink to="#sponsors">Sponsors</ListLink>
+          <ListLink to="#schedule">Schedule</ListLink>
         </ul>
       </header>
       {children}

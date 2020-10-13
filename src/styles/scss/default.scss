@@ -6,6 +6,21 @@ html, body {
   overflow-x: hidden;
 }
 
+button {
+  width: 12rem;
+  height: 2rem;
+  border-radius: 10px;
+  outline: 0;
+  border: none;
+
+  &:hover {
+    background-color: rgb(219, 219, 219);
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
 table {
   color: black;
   width: 90%;
@@ -30,12 +45,28 @@ svg {
   margin-bottom: 1rem;
   justify-content: space-between;
 
+  h3, h4 {
+    margin: 0;
+  }
   .speaker {
     width: 45%;
-    height: 300px;
+    height: 200px;
     background-color: white;
     text-align: center;
     margin-top: 10px;
     border-radius: 25px;
   }
 }
+
+.flexS {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+
+  img {
+    width: 25%;
+  }
+}
+
+
